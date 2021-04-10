@@ -1,0 +1,153 @@
+/*
+ * Custom Properties o variables en CSS
+*/
+:root {
+  --fonts-sans-serif: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto','Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif";
+  --fonts-serif: "";
+  --color-primary: rgb(252, 100, 109);
+  --color-secondary: rgb(61, 146, 174);
+  --color-terciary: rgb(157, 123, 142);
+
+  --color-success: rgb(0, 204, 153);
+  --color-info: rgb(0, 149, 182);
+  --color-warning: rgb(251, 236, 93);
+  --color-danger: rgb(207, 16, 32);
+
+  --color-white: rgb(253, 253, 253);
+  --color-light: rgb(240, 240, 240);
+  --color-gray: rgb(235, 235, 235);
+  --color-dark: rgb(50, 50, 50);
+  --color-black: rgb(10, 10, 10);
+
+  --color-primary-light: rgba(252, 100, 109, 0.1);
+  --color-secondary-light: rgba(61, 146, 174, 0.1);
+  --color-terciary-light: rgba(157, 123, 142, 0.1);
+
+  --color-success-light: rgb(0, 204, 153, 0.1);
+  --color-info-light: rgb(0, 149, 182, 0.1);
+  --color-warning-light: rgb(251, 236, 93, 0.1);
+  --color-danger-light: rgb(207, 16, 32, 0.1);
+
+  --border-color: rgb(230, 230, 230);
+  --border-color-2: rgb(32, 32, 32);
+
+  --shadow-1: 0px 2px 4px rgba(32, 32, 32, 0.1);
+  --shadow-2: 0px 4px 8px rgba(32, 32, 32, 0.1);
+  --shadow-3: 0px 8px 16px rgba(32, 32, 32, 0.1);
+  --shadow-4: 0px 16px 24px rgba(32, 32, 32, 0.1);
+  --shadow-5: 0px 24px 32px rgba(32, 32, 32, 0.1);
+
+  --padding: 1rem;
+  --margin: 1rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Los estilos en CSS se escriben asi */
+/* 
+ * Pero tambien se pueden escribir
+ * asi los comentarios, dependiendo
+ * su longitud
+*/
+
+
+/* 
+ * ==========
+ * Reglas CSS
+ * 
+ * Una regla CSS es un bloque de instrucciones para aplicar estilos
+ * a un elemento HTML (o XML).
+ * La forma en la que se construye una Regla CSS es
+
+  selector {
+    propiedad: valor;
+    propiedad[es]: valor[es];
+  }
+
+  * Los selectores son de diferentes tipos por ejemplo pueden ser
+
+  * Selectores basicos
+  elemento {...}
+  .clase {...}
+  #id {...}
+  * {...} -> este es llamado selector universal
+  [attr="valor"] {...}
+
+  * Selectores de agrupación
+  selector, selector {...} -> la coma puede agrupar diferentos selectores
+
+  * Selectores de combinación
+  selector selector {...} -> 
+  selector > selector {...} -> hijos directos
+  selector ~ selector {...} -> selector hermano general
+  selector + selector {...} -> selector hermano adjacente
+
+  * Las propiedades y valores dependen del tipo de elemento que sea
+  * Pero la regla siempre es la misma 
+
+  propiedad: valor;
+
+ * 
+*/
+
+/* Reglas generales para utilizar */
+.container {
+  width: 80%;
+}
+
+.btn {
+  display: inline-block;
+  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+/* Ordenar reglas CSS por orden de aparición */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.site-title a {
+  color: #111;
+  text-decoration: none;
+}
+
+.site-header .site-nav {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header .site-nav a {
+  color: #333;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.site-hero {
+  color: #fff;
+  background: linear-gradient(#d46767, #6f76be);
+  height: 400px;
+  padding: 2rem 4rem;
+}
+
+.site-hero h1 {
+  font-size: 4rem;
+}
+
+.site-hero h2 {
+  font-size: 2rem;
+}
+
+.site-footer {
+  padding: 2rem;
+}
