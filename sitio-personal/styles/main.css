@@ -1,0 +1,149 @@
+/* 
+ * BEM 
+ * Block
+ * Element
+ * Modifier
+ */
+
+ /*
+  * 1. Header
+  * 2. Title
+  * 3. Nav
+  * 4. Hero
+  * 5. About
+  */
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.section {
+  margin: 10rem 0;
+}
+
+.page {
+  width: 76%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-decoration: uppercase;
+  font-weight: 500;
+}
+
+.title--site a{
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.title--section {
+  font-size: 1.75rem;
+}
+
+.title--hero {
+  font-size: 2.75rem;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  color: var(--color-black);
+  margin: var(--margin);
+  padding: var(--padding);
+  font-weight: 500;
+}
+
+.nav--header {
+  flex-direction: row;
+}
+
+.nav--footer {
+  flex-direction: row;
+ }
+
+.nav--sidebar {
+  flex-direction: column;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.hero--big-text {
+  color: var(--color-dark);
+  font-size: 1.75rem;
+  line-height: 1.25;
+  
+}
+
+.hero__image img{
+  width: 500px;
+}
+
+/* call to action */
+.cta {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  box-shadow: var(--shadow-1);
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 1rem;
+  height: 32px;
+  line-height: 1.8;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  width: 120px;
+}
+
+.cta--secondary {
+  background-color: var(--color-secondary);
+}
+
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.about-me__title {
+  font-size: 1.75rem;
+  font-weight: bolder;
+}
+
+.about-me__content {
+  color: var(--color-dark);
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px;
+  gap: 1.5rem;
+}
